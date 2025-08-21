@@ -1,0 +1,154 @@
+/* Navbar gradiente */
+.navbar {
+    background-image: linear-gradient(#113F67, #34699A, #58A0C8) !important;
+  }
+  
+  /* Links da navbar */
+  .nav-link {
+    color: white !important;
+    font-family: 'Quicksand';
+    font-weight: 700;
+  }
+  
+  /* Espaçamento entre os itens da navbar */
+  .navbar-nav > li {
+    padding-left: 1rem; /* Reduzido de 2rem para evitar estouro */
+  }
+  
+  /* Hover nos links da navbar */
+  .nav-link:hover {
+    color: #F2E8EA !important;
+  }
+  
+  /* Underline animado */
+  .nav-link::after {
+    content: '';
+    height: 0.2rem;
+    width: 100%;
+    background: #F2E8EA;
+    display: block;
+    position: relative;
+    bottom: -0.7rem;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+  }
+  
+  .nav-link:hover::after {
+    opacity: 1;
+  }
+  
+  /* Altura do carrossel */
+  .carousel-item {
+    height: 25rem;
+  }
+
+  .banner-item {
+    height: 30rem;
+  }
+
+  /* Ajustes de fonte e estilo */
+  .adjustments {
+    font-family: 'Quicksand';
+    font-weight: 700;
+  }
+  
+  .adjustments h1,
+  .adjustments h2 {
+    text-transform: uppercase;
+  }
+  
+  /* Fundo gradiente para seções */
+  .background-events {
+    background-image: linear-gradient(#113F67, #34699A, #58A0C8);
+  }
+  
+  /* Estilo do título da seção de eventos */
+  .background-events h2 {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  /* Rodapé com gradiente */
+  .background-footer {
+    background-image: linear-gradient(#113F67, #34699A, #58A0C8);
+    color: white;
+  }
+
+  /*Localização*/
+
+  .location {
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+  }
+
+  .lead {
+    text-align: justify !important;
+  }
+
+  .history {
+    font-family: 'Quicksand' !important;
+  }
+
+  .hist-title {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .location-background {
+    font-family: 'Quicksand' !important;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .programacao {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .programacao .card-text1 {
+    background-color: #34699A;
+    color: white;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+
+  .prog-font {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .location-height {
+    min-height: 100vh;
+  }
+
+  .reflex {
+    background-image: linear-gradient(#113F67, #34699A, #58A0C8) !important;
+    font-family: 'Quicksand' !important;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    #bannerdahistoria .banner-item{
+      height: 15rem;
+    }
+    #carouselExampleAutoplaying .carousel-inner{
+      height: 15rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .carousel-item {
+      height: 35rem;
+    }
+    #bannerdahistoria .banner-item{
+      height: 35rem;
+    }
+  }
